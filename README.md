@@ -1,16 +1,16 @@
 # R script for VSA Eventbrite Data
 
-# USE eventbrite.Rmd
+## USE eventbrite.Rmd
 
-# Requires Current Exported data from Eventbrite
+### Requires Current Exported data from Eventbrite
 ```{r}
 vsa_data <- read_delim("apr20_vsa.csv")
 ```
-# Required Columns
+### Required Columns
 ```
 Name, Email, Pronouns, Indicate school, food allergies, accommodations
 ```
-# Rename columns
+### Rename columns
 ```{r}
 vsa_data <- vsa_data %>%
   rename(pronoun = `What are your pronouns?`,
@@ -21,7 +21,7 @@ vsa_data <- vsa_data %>%
 
 head(vsa_data, 5)
 ```
-# Merges First and Last Name Columns
+### Merges First and Last Name Columns
 ```{r}
 vsa_data <- vsa_data %>%
   mutate(Name = paste(`First Name`, `Last Name`)) %>%
@@ -29,12 +29,12 @@ vsa_data <- vsa_data %>%
 head(vsa_data, 5)
   
 ```
-# Filter out "Info Requested"
+### Filter out "Info Requested"
 ```{r}
 vsa_data <- vsa_data %>%
   filter(Name != "Info Requested Info Requested")
 ```
-# Export the modified data frame to a CSV file
+### Export the modified data frame to a CSV file
 ```{r}
 write_csv(vsa_data, "modified_vsa_data.csv")
 ```
