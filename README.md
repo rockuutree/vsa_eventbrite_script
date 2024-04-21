@@ -1,5 +1,6 @@
 # vsa_eventbrite_script
 
+# USE eventbrite.Rmd
 
 # Requires Current Exported data from Eventbrite
 ```{r}
