@@ -1,4 +1,4 @@
-# vsa_eventbrite_script
+# R script for VSA Eventbrite Data
 
 # USE eventbrite.Rmd
 
