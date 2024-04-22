@@ -19,7 +19,19 @@ read_delim("apr20_vsa.csv")
 ```
 ### Required Columns
 ```
-Name, Email, Pronouns, Indicate school, food allergies, accommodations
+First Name,
+
+Last Name,
+
+Email,
+
+What are your pronouns?,
+
+Please indicate any school/organization that you are a part of. If you're a CS staff family member, please put staff name and your relation to the staff,
+
+Do you have any food/medical allergies? If no, please put N/A. If yes, please list them,
+
+Does you need any accommodations regarding seating? (Ex. wheelchair, crutches, sensitivity to loud noises, etc) If not, please put N/A. If yes, please list them
 ```
 ### Rename columns
 ```{r}
