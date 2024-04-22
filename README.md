@@ -1,10 +1,21 @@
-# R script for VSA Eventbrite Data
+# R script for VSA Eventbrite Data 
+```
+Filters out unnecessary data and returns csv of valid responses
+```
 
-## USE eventbrite.Rmd
+## HOW TO USE FOR REGULAR PEOPLE
+```
+1. USE eventbrite.Rmd
+2. Download an IDE - R Studio https://posit.co/download/rstudio-desktop/
+3. Export CSV from Eventbrite (Under "Responses to custom questions")
+4. Replace INPUT with csv file name to read_delim(<"INPUT.csv">)
+5. Run R Script
+6. Returns modified_vsa_data.csv
+```
 
 ### Requires Current Exported data from Eventbrite
 ```{r}
-vsa_data <- read_delim("apr20_vsa.csv")
+read_delim("apr20_vsa.csv")
 ```
 ### Required Columns
 ```
