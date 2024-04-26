@@ -17,7 +17,7 @@ library(ggplot2)
 
 # Requires Current Exported data from Eventbrite
 ```{r}
-vsa_data <- read_delim("apr20_vsa.csv")
+vsa_data <- read_delim("cur_vsa.csv")
 ```
 # Required Columns
 ```
