@@ -12,6 +12,13 @@ Filters out unnecessary data and returns csv of valid responses
 5. Run R Script
 6. Returns modified_vsa_data.csv
 ```
+## Alternative way to run on terminal/Command Line
+```
+1. Install homebrew
+2. Install pandoc: brew install pandoc
+3. cd to directory (in terminal) containing eventbrite.Rmd and cur_vsa.csv
+4. run: Rscript -e "rmarkdown::render('eventbrite.Rmd')"
+```
 
 ### Requires Current Exported data from Eventbrite
 ```{r}
